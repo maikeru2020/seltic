@@ -3,6 +3,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+}
+
+#inprogress {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 70px;
 }
 
 #searchicon {
@@ -21,27 +30,27 @@ body {
 }
 
 .topnav {
-    background-color: green;
+    background-color: royalblue;
     position: fixed;
     width: 100%;
     top: 0px;
 }
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .topnav a:hover {
     color: black;
-    background-color: tan;
+    background-color: tomato;
 }
 
-.topnav a.current {
+.topnav a.active {
     color: black;
     background-color: white;
 }

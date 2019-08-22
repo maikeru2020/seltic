@@ -6,7 +6,12 @@ app.set('views', 'views');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home.ejs');
+});
+
+app.get('/:page', (req, res) => {
+    var page = req.params.page;
+    res.render(page + ".ejs");
 });
 
 const port = process.env.PORT || 8000;

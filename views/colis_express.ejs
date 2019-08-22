@@ -12,28 +12,20 @@
 </head>
 <body>
   <div class="topnav" id="topnavId">
-    <a href="/" class="active"><i class="fa fa-fw fa-home"></i> SELTIC</a>
-    <a href="colis_express">COLIS EXPRESS</a>
+    <a href="/"><i class="fa fa-fw fa-home"></i> SELTIC</a>
+    <a href="colis_express" class="active">COLIS EXPRESS</a>
     <a href="transit">TRANSIT</a>
     <a href="logistics">LOGISTICS</a>
     <a href="achats_inter">ACHATS INTER</a>
     <a href="groupage"> GROUPAGE & DEGROUPAGE</a>
     <a href="negoces">NÉGOCES</a>
     <a href="assistance">ASSISTANCE</a>
-    <a href="contact">CONTACT</a>
+    <a href="a_propos">A PROPOS</a>
     <a href="javascript:void(0);" class="icon" onclick="toggleResponsive();">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-  <h2>COMMISSIONNAIRE AGREE EN DOUANE (SErvices and LogisTics)</h2>
-  <hr>
-  <h3>
-    Slogan : Beyond thinking.<br>
-    Tel : +22509328907<br>
-    Heure d ouverture : 08:00<br>
-    Heure de fermeture : 16:30<br>
-    Jours : Du lundi au Vendredi<br>
-    Sauf : Jours fériés.<br>
-    Bureau : ABIDJAN,Plateau derrière la BCEAO,immeuble  Horizon.<br>
-  </h3>
+  <% for (let i = 0; i < 50; i++) { %>
+  <p id="inprogress">In Progress</p>
+  <% } %>
 </body>
