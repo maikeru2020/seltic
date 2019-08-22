@@ -1,6 +1,14 @@
-<%- include('index.ejs'); %>
+<%- include('header.ejs'); %>
 <body>
+<div id="image-container">
 <%- include('topnav.ejs'); %>
+<img src="" id="imgbackground">
+<p id="caption">COMMISSIONNAIRE AGREE EN DOAUNE/ AFRICA FORWARDING BROKER.....</p>
+</div>
 <%- include(page + '.ejs'); %>
+<%- include('footer.ejs'); %>
 </body>
 </html>
+<script>
+    $(<%=page %>).addClass("active");
+</script>
