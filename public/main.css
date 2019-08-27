@@ -18,8 +18,29 @@ body {
     bottom: 300px;
     width: 100%;
     color: white;
-    background-color: red;
+    background-color: tomato;
     font-size: 30px;
+}
+
+.socialmedia li {
+    list-style-type: none;
+    display: inline;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-twitter {
+    color: royalblue;
+
+}
+
+.fa-whatsapp {
+    color: white;
+    background-color: green;
 }
 
 #bottom {
@@ -122,9 +143,9 @@ footer {
     display: block;
     color: white;
     text-align: center;
-    padding: 18px 16px;
+    padding: 16px 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .topnav a:hover {
@@ -141,7 +162,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1230px) {
     .topnav a:not(:first-child) { display: none; }
     .topnav a.icon {
         float: right;
@@ -149,7 +170,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1230px) {
     .topnav.responsive { position: relative; }
     .topnav.responsive a.icon {
         position: absolute;

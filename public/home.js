@@ -2,10 +2,10 @@ var slideIndex = 1;
 
 function slideShow() {
     ++slideIndex;
-    if (slideIndex == 4) {
+    if (slideIndex == 5) {
         slideIndex = 1;
     }
-    console.log(slideIndex);
+
     $("#slide").fadeOut(8000, function() {
         $("#slide").attr("src", "images/image" + slideIndex + ".jpg");
         if (slideIndex == 2) {
@@ -21,18 +21,11 @@ function slideShow() {
     });
 }
 
-function nextSlide() {
-    --slideIndex;
-    if (slideIndex == 3) {
-        slideIndex = 1;
+function toggleMap() {
+    if ($("#map").html() == "") {
+        var mapHtml = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.1557909477664!2d-4.013597870864654!3d5.321330535083968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb48e7418669%3A0xf4cf652607ae6fe1!2sResidence%20Horizon!5e0!3m2!1sen!2sus!4v1566945296972!5m2!1sen!2sus' width='' height='' frameborder='0' style='border:0;' allowfullscreen=''></iframe>";
+        $("#map").html(mapHtml);
+    } else {
+        $("#map").html("");
     }
-    $("#slide").attr("src", "images/image" + slideIndex + ".jpeg");
-}
-
-function prevSlide() {
-    --slideIndex;
-    if (slideIndex == 0) {
-        slideIndex = 2;
-    }
-    $("#slide").attr("src", "images/image" + slideIndex + ".jpeg");
 }
