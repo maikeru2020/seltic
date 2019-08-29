@@ -3,6 +3,18 @@ body {
     margin: 0;
 }
 
+h1 {
+    margin-top: 100px;
+}
+
+h2 {
+
+}
+
+#selticlogo {
+    height: 30px;
+}
+
 .images {
     overflow: hidden;
     height: 800px;
@@ -20,6 +32,7 @@ body {
     color: white;
     background-color: tomato;
     font-size: 30px;
+    padding: 50px 0px;
 }
 
 .socialmedia li {
@@ -44,20 +57,25 @@ body {
 }
 
 #bottom {
-    margin: auto;
+    margin: 0 auto;
+    width: 820px;
+    background-color: lightgreen;
 }
 
 #partners {
     height: 300px;
+    list-style-type: none;
+    width: 420px;
+    margin: 0 auto;
 }
 
 #partnertext {
     font-size: 30px;
+    text-align: center;
     background-color: white;
     color: red;
-    padding: 30px 10px;
-    border-radius: 50%;
-    width: 200px;
+    width: auto;
+    margin: auto;
 }
 
 .logo {
@@ -67,7 +85,7 @@ body {
 }
 
 #partners img {
-    height: 200px;
+    height: 100px;
 }
 
 #contactinfo {
@@ -77,20 +95,29 @@ body {
     color: white;
     display: inline-block;
     background-color: darkblue;
-    padding: 10px;
-    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 0;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
+.center {
+    text-align: center;
+    font-size: 30px;
+}
 #caption {
     position: relative;
     /* display: inline-block; */
     border-radius: 5%;
     color: white;
     background-color: darkblue;
-    padding: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
     width: 300px;
     font-size: 30px;
     float: left;
@@ -105,30 +132,6 @@ footer {
 
 .slide {
     display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
 }
 
 .topnav {
@@ -162,6 +165,25 @@ footer {
     display: none;
 }
 
+@media screen and (max-width: 840px) {
+    #caption, #contactinfo {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+    #bottom {
+        width: 630px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #caption, #contactinfo {
+        float: none;
+    }
+    #bottom {
+        width: 310px;
+    }
+}
+
 @media screen and (max-width: 1230px) {
     .topnav a:not(:first-child) { display: none; }
     .topnav a.icon {
@@ -171,7 +193,7 @@ footer {
 }
 
 @media screen and (max-width: 1230px) {
-    .topnav.responsive { position: relative; }
+    .topnav.responsive { position: fixed; }
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;

@@ -6,7 +6,8 @@ function slideShow() {
         slideIndex = 1;
     }
 
-    $("#slide").fadeOut(8000, function() {
+    setTimeout(function() { 
+        $("#slide").fadeOut(8000, function() {
         $("#slide").attr("src", "images/image" + slideIndex + ".jpg");
         if (slideIndex == 2) {
             $("#slide").css("height", "100%");
@@ -18,7 +19,8 @@ function slideShow() {
         
         $("#slide").fadeIn(8000, slideShow);
 
-    });
+        });
+    }, 40000);
 }
 
 function toggleMap() {
