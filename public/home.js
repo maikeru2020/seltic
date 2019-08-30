@@ -1,26 +1,32 @@
 var slideIndex = 1;
 
 function slideShow() {
+    var timeOut = 0
+    if (slideIndex == 1) {
+        timeOut = 5000;
+    }
     ++slideIndex;
     if (slideIndex == 5) {
         slideIndex = 1;
     }
 
-    setTimeout(function() { 
-        $("#slide").fadeOut(8000, function() {
-        $("#slide").attr("src", "images/image" + slideIndex + ".jpg");
-        if (slideIndex == 2) {
-            $("#slide").css("height", "100%");
-            $("#slide").css("width", "auto");
-        } else {
-            $("#slide").css("height", "auto");
-            $("#slide").css("width", "100%");
-        }
-        
-        $("#slide").fadeIn(8000, slideShow);
+    setTimeout(fade, timeOut);
+}
 
-        });
-    }, 40000);
+function fade() { 
+    $("#slide").fadeOut(8000, function() {
+    $("#slide").attr("src", "images/image" + slideIndex + ".jpg");
+    if (slideIndex == 2) {
+        $("#slide").css("height", "100%");
+        $("#slide").css("width", "auto");
+    } else {
+        $("#slide").css("height", "auto");
+        $("#slide").css("width", "100%");
+    }
+    
+    $("#slide").fadeIn(8000, slideShow);
+
+    });
 }
 
 function toggleMap() {
