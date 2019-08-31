@@ -6,11 +6,3 @@ function toggleResponsive() {
         topNav.removeClass("responsive");
     }
 }
-
-function toggleSidebar() {
-    $(".sidebar").css("display", "block");
-}
-
-function removeSidebar() {
-    $(".sidebar").css("display", "none");
-}
