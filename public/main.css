@@ -3,12 +3,44 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin-top: 100px;
+#top {
+    background-image: url("images/telephone.svg"), linear-gradient(to right, green, white);
+    padding: 100px;
+    padding-left: 300px;
+    background-repeat: no-repeat;
 }
 
-h2 {
+.arrow {
+    font-size: 30px;
+    position: fixed;
+    top: 300px;
+    z-index: 1;
+}
 
+.arrow a {
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: lightgreen;
+    list-style-type: none;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
+    display: none;
+}
+
+.content {
+    position: fixed;
+    top: 80px;
+    left: 30px;
+    bottom: 0px;
+    width: 100%;
+    padding-right: 100px;
+    overflow-y: auto;
+    outline: none;
 }
 
 #selticlogo {
@@ -128,6 +160,7 @@ footer {
     color: #fff;
     background: royalblue;
     text-align: center;
+    display: none;
 }
 
 .slide {

@@ -6,3 +6,15 @@ function toggleResponsive() {
         topNav.removeClass("responsive");
     }
 }
+
+function toggleSidebar() {
+    $(".sidebar").toggle();
+}
+
+$(document).ready(function() {
+    focusContent();
+});
+
+function focusContent() {
+    $(".content").focus();
+}
