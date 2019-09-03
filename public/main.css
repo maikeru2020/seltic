@@ -1,13 +1,37 @@
 body {
     background-color: gainsboro;
-    margin: 0;
+    margin: 0px;
+}
+
+h2 {
+    color: royalblue;
+}
+
+h3 {
+    color: tomato;
+}
+
+#selticlogo {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+#selticlogo img {
+    height: 53px;
 }
 
 #top {
-    background-image: url("images/telephone.svg"), linear-gradient(to right, green, white);
-    padding: 100px;
+    background-image: url("images/telephone.svg"), linear-gradient(to right, tomato, white);
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 300px;
     background-repeat: no-repeat;
+}
+
+.subtitle {
+    max-width: 580px;
 }
 
 .arrow {
@@ -26,21 +50,59 @@ body {
     list-style-type: none;
     position: fixed;
     top: 50px;
+    padding-left: 0;
     height: 100%;
     opacity: 0.9;
     z-index: 1;
     display: none;
 }
 
+.sidebar li {
+
+}
+
+.sidebar a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: pink;
+}
+
+#phone {
+    color: blue;
+    width: 300px;
+}
+
+#phonetext {
+    font-size: 20px;
+}
+
 .content {
-    position: fixed;
-    top: 80px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 5%;
+    padding: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* position: fixed;
+    top: 70px;
     left: 30px;
     bottom: 0px;
-    width: 100%;
+    width: calc(100% - 30px);
     padding-right: 100px;
     overflow-y: auto;
-    outline: none;
+    outline: none; */
 }
 
 #selticlogo {
@@ -91,7 +153,6 @@ body {
 #bottom {
     margin: 0 auto;
     width: 820px;
-    background-color: lightgreen;
 }
 
 #partners {
@@ -173,6 +234,7 @@ footer {
     z-index: 1;
     width: 100%;
     top: 0px;
+    left: 130px;
 }
 .topnav a {
     float: left;

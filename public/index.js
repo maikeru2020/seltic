@@ -12,9 +12,5 @@ function toggleSidebar() {
 }
 
 $(document).ready(function() {
-    focusContent();
+    
 });
-
-function focusContent() {
-    $(".content").focus();
-}

@@ -11,8 +11,24 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<%- include('topnav.ejs'); %>
+<div id="selticlogo"><a href="home"><img src="images/seltic_logo.png"></a></div>
+<div class="topnav">
+  <a href="colis_express" id="colis_express">COLIS EXPRESS</a>
+  <a href="transit" id="transit">TRANSIT</a>
+  <a href="logistics" id="logistics">LOGISTICS</a>
+  <a href="achats_inter" id="achats_inter">ACHATS INTER</a>
+  <a href="groupage" id="groupage"> GROUPAGE & DEGROUPAGE</a>
+  <a href="negoces" id="negoces">NÉGOCES</a>
+  <a href="assistance" id="assistance">ASSISTANCE</a>
+  <a href="contact" id="contact">CONTACT</a>
+</div>
 <%- include(page + '.ejs'); %>
+<ul class="socialmedia">
+  <li><a href="https://www.facebook.com/Seltic-Sarl-388885858382049/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="https://wa.me/22509328907" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+  <li id="phone"><i class="fa fa-mobile"></i><span id="phonetext"> +22509328907</span></li>
+</ul>
 <%- include('footer.ejs'); %>
 </body>
 
