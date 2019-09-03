@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<div id="selticlogo"><a href="home"><img src="images/seltic_logo.png"></a></div>
-<div class="topnav">
+<div class="topnav" id="topnavId">
+  <a href="home" id="home"><img src="images/seltic_logo.png"></a>
   <a href="colis_express" id="colis_express">COLIS EXPRESS</a>
   <a href="transit" id="transit">TRANSIT</a>
   <a href="logistics" id="logistics">LOGISTICS</a>
@@ -21,7 +21,10 @@
   <a href="negoces" id="negoces">NÉGOCES</a>
   <a href="assistance" id="assistance">ASSISTANCE</a>
   <a href="contact" id="contact">CONTACT</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleResponsive();"><i class="fa fa-bars"></i></a>
 </div>
+
+
 <%- include(page + '.ejs'); %>
 <ul class="socialmedia">
   <li><a href="https://www.facebook.com/Seltic-Sarl-388885858382049/" target="_blank"><i class="fa fa-facebook"></i></a></li>
