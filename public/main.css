@@ -15,6 +15,14 @@ h3 {
     color: tomato;
 }
 
+.white {
+    color: white;
+}
+
+#map {
+    float: left;
+}
+
 .topnav {
     background-color: royalblue;
     position: fixed;
@@ -160,10 +168,11 @@ h3 {
     position: absolute;
     bottom: 300px;
     width: 100%;
-    color: white;
+    color: blue;
     background-color: tomato;
     font-size: 30px;
     padding: 50px 0px;
+    opacity: 0.5;
 }
 
 .socialmedia li {
