@@ -3,26 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>Seltic</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="<%=page %>.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/small.css">
+
 </head>
 <body>
-<div class="topnav" id="topnavId">
-  <a href="home" id="home"><img src="images/seltic_logo.png"></a>
-  <a href="colis_express" id="colis_express">COLIS EXPRESS</a>
-  <a href="transit" id="transit">TRANSIT</a>
-  <a href="logistics" id="logistics">LOGISTICS</a>
-  <a href="achats_inter" id="achats_inter">ACHATS INTER</a>
-  <a href="groupage" id="groupage"> GROUPAGE & DEGROUPAGE</a>
-  <a href="negoces" id="negoces">NÉGOCES</a>
-  <a href="assistance" id="assistance">ASSISTANCE</a>
-  <a href="contact" id="contact">CONTACT</a>
-  <a href="javascript:void(0);" class="icon" onclick="toggleResponsive();"><i class="fa fa-bars"></i></a>
-</div>
+  <div id="selticlogo"><img src="images/seltic_logo.png"></div>
+<nav>
+  <button><i class="fa fa-bars"></i></button>
+  <ul>
+    <li><a href="home" id="home">HOME</a></li>
+    <li><a href="colis_express" id="colis_express">COLIS EXPRESS</a></li>
+    <li><a href="transit" id="transit">TRANSIT</a></li>
+    <li><a href="logistics" id="logistics">LOGISTICS</a></li>
+    <li><a href="achats_inter" id="achats_inter">ACHATS INTER</a></li>
+    <li><a href="groupage" id="groupage"> GROUPAGE & DEGROUPAGE</a></li>
+    <li><a href="negoces" id="negoces">NÉGOCES</a></li>
+    <li><a href="assistance" id="assistance">ASSISTANCE</a></li>
+    <li><a href="contact" id="contact">CONTACT</a></li>
+  </ul>
+</nav>
 
 
 <%- include(page + '.ejs'); %>
