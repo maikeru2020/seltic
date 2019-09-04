@@ -1,0 +1,22 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    float: left;
+    padding: 18px 10px;
+}
+
+nav #home {
+    padding: 0px;
+}

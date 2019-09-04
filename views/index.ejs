@@ -9,24 +9,23 @@
     <script src="index.js"></script>
     <script src="<%=page %>.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" media="(max-width: 480px)" href="css/small.css">
-
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="css/large.css">
 </head>
 <body>
-  <img src="images/seltic_logo.jpg">
 <nav>
-  <button><i class="fa fa-bars"></i></button>
-  <ul>
-    <li><a href="home" id="home">HOME</a></li>
-    <li><a href="colis_express" id="colis_express">COLIS EXPRESS</a></li>
-    <li><a href="transit" id="transit">TRANSIT</a></li>
-    <li><a href="logistics" id="logistics">LOGISTICS</a></li>
-    <li><a href="achats_inter" id="achats_inter">ACHATS INTER</a></li>
-    <li><a href="groupage" id="groupage"> GROUPAGE & DEGROUPAGE</a></li>
-    <li><a href="negoces" id="negoces">NÉGOCES</a></li>
-    <li><a href="assistance" id="assistance">ASSISTANCE</a></li>
-    <li><a href="contact" id="contact">CONTACT</a></li>
+  <button><i class="fa fa-bars" onclick="toggleMenu();"></i></button>
+  <ul id="menu">
+    <li id="home"><a href="home"><img src="images/seltic_logo.jpg"></a></li>
+    <li id="colis_express"><a href="colis_express">COLIS EXPRESS</a></li>
+    <li id="transit"><a href="transit">TRANSIT</a></li>
+    <li id="logistics"><a href="logistics">LOGISTICS</a></li>
+    <li id="achats_inter"><a href="achats_inter">ACHATS INTER</a></li>
+    <li id="groupage"><a href="groupage"> GROUPAGE & DEGROUPAGE</a></li>
+    <li id="negoces"><a href="negoces">NÉGOCES</a></li>
+    <li id="assistance"><a href="assistance">ASSISTANCE</a></li>
+    <li id="contact"><a href="contact">CONTACT</a></li>
   </ul>
 </nav>
 

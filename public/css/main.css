@@ -24,6 +24,61 @@ h3 {
 .white {
     color: white;
 }
+#selticlogo {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#selticlogo img {
+    height: 50px;
+}
+
+nav {
+    background-color: royalblue;
+}
+
+nav button {
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 44px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+}
+
+nav li {
+    padding: 10px 10px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav .active {
+    background-color: tomato;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    background-color: tomato;
+}
+
+nav img {
+    height: 50px;
+}
+
 
 #map {
     float: left;
@@ -74,7 +129,7 @@ h3 {
 
 #top {
     background-image: url("images/telephone.svg"), linear-gradient(to right, tomato, white);
-    margin-top: 50px;
+    margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 300px;
@@ -154,10 +209,6 @@ h3 {
     padding-right: 100px;
     overflow-y: auto;
     outline: none; */
-}
-
-#selticlogo {
-    height: 30px;
 }
 
 .images {
