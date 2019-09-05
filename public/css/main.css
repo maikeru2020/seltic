@@ -19,12 +19,30 @@ p {
     width: 100%;
 }
 
+marquee {
+    background-color: tomato;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    margin-top: 100px;
+    background-image: linear-gradient(to right, red, white);
+    padding: 50px;
+}
+
 .block {
     background-color: white;
     padding: 30px 20px;
     margin-top: 20px;
-    max-width: 1000px;
-    border-radius: 5%;
+    max-width: 2000px;
+}
+
+.socialmedia {
+    width: 100%;
+    border: 1px solid black;
 }
 
 .socialmedia li {
@@ -52,7 +70,10 @@ p {
 
 #partners  {
     height: 150px;
-    text-align: center;
+}
+
+#partners ul {
+    padding-left: 0px;
 }
 
 #partners li {
@@ -62,4 +83,8 @@ p {
 
 #partners img {
     height: 44px;
+}
+
+footer {
+    text-align: center;
 }
