@@ -1,15 +1,18 @@
 #selticlogo {
+    display: block;
     position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#selticlogo img {
-    height: 50px;
+    top: 4px;
+    left: calc((100% - 165px) / 2);
+    width: 165px;
+    z-index: 1;
 }
 
 nav {
     background-color: royalblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav button {
@@ -26,13 +29,12 @@ nav ul {
     display: none;
 }
 
-nav ul li a {
-    display: block;
+nav li {
+    border-top: 1px solid rgba(0,0,0,0.3);
 }
 
-nav li {
-    padding: 10px 10px;
-    border-top: 1px solid rgba(0,0,0,0.3);
+#home {
+    display: none;
 }
 
 nav .active {
@@ -43,12 +45,18 @@ nav a {
     display: block;
     text-decoration: none;
     color: white;
+    padding: 20px 10px;
 }
 
-nav li:hover {
+nav a:hover {
     background-color: tomato;
 }
 
 nav img {
     height: 50px;
+}
+
+#mapbutton {
+    font-size: 44px;
+    display: block;
 }

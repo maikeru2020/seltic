@@ -16,5 +16,5 @@ function toggleSidebar() {
 }
 
 $(document).ready(function() {
-    
+   
 });

@@ -1,16 +1,6 @@
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 body {
-    background-color: gainsboro;
-    margin: 0px;
-}
-
-p {
-    color: blue;
+    margin: 0;
+    background: gainsboro;
 }
 
 h2 {
@@ -21,222 +11,31 @@ h3 {
     color: tomato;
 }
 
-.white {
-    color: white;
-}
-#selticlogo {
-    position: fixed;
-    top: 0;
-    right: 0;
+p {
+    color: mediumblue;
 }
 
-#selticlogo img {
-    height: 50px;
-}
-
-nav {
-    background-color: royalblue;
-}
-
-nav button {
-    margin: 5px;
-    background-color: transparent;
-    border: none;
-    font-size: 44px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-nav ul li a {
-    display: block;
-}
-
-nav li {
-    padding: 10px 10px;
-    border-top: 1px solid rgba(0,0,0,0.3);
-}
-
-nav .active {
-    background-color: tomato;
-}
-
-nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-
-nav li:hover {
-    background-color: tomato;
-}
-
-nav img {
-    height: 50px;
-}
-
-
-#map {
-    float: left;
-}
-
-.topnav {
-    background-color: royalblue;
-    position: fixed;
-    z-index: 1;
+#backgroundimage {
     width: 100%;
-    top: 0px;
-}
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 10px;
-    text-decoration: none;
-    font-size: 18px;
 }
 
-.topnav #home {
-    padding: 0px;
-}
-
-.topnav img {
-    height: 48px;
-}
-
-.topnav a:hover {
-    color: black;
-    background-color: tomato;
-}
-
-.topnav a.active {
-    color: black;
+.block {
     background-color: white;
-}
-
-.topnav .icon {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
-}
-
-#top {
-    background-image: url("images/telephone.svg"), linear-gradient(to right, tomato, white);
-    margin-top: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 300px;
-    background-repeat: no-repeat;
-}
-
-.subtitle {
-    max-width: 580px;
-}
-
-.arrow {
-    font-size: 30px;
-    position: fixed;
-    top: 300px;
-    z-index: 1;
-}
-
-.arrow a {
-    cursor: pointer;
-}
-
-.sidebar {
-    background-color: lightgreen;
-    list-style-type: none;
-    position: fixed;
-    top: 50px;
-    padding-left: 0;
-    height: 100%;
-    opacity: 0.9;
-    z-index: 1;
-    display: none;
-}
-
-.sidebar li {
-
-}
-
-.sidebar a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: auto;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-.sidebar a:hover {
-    background-color: pink;
-}
-
-#phone {
-    color: blue;
-    width: 300px;
-}
-
-#phonetext {
-    font-size: 20px;
-}
-
-.content {
-    margin-top: 30px;
-    background-color: white;
+    padding: 30px 20px;
+    margin-top: 20px;
+    max-width: 1000px;
     border-radius: 5%;
-    padding: 50px;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* position: fixed;
-    top: 70px;
-    left: 30px;
-    bottom: 0px;
-    width: calc(100% - 30px);
-    padding-right: 100px;
-    overflow-y: auto;
-    outline: none; */
-}
-
-.images {
-    overflow: hidden;
-    height: 800px;
-}
-
-#slide {
-    width: 100%;
-    display: block;
-}
-
-#banner {
-    position: absolute;
-    bottom: 300px;
-    width: 100%;
-    color: blue;
-    background-color: tomato;
-    font-size: 30px;
-    padding: 50px 0px;
-    opacity: 0.5;
 }
 
 .socialmedia li {
     list-style-type: none;
-    display: inline;
-    font-size: 50px;
-    margin: 20px;
+    float: left;
+    font-size: 44px;
+    padding: 10px;
+}
+
+#phonetext {
+    font-size: 20px;
 }
 
 .fa-facebook {
@@ -245,128 +44,22 @@ nav img {
 
 .fa-twitter {
     color: royalblue;
-
 }
 
 .fa-whatsapp {
-    color: white;
-    background-color: green;
+    color: green;
 }
 
-#bottom {
-    margin: 0 auto;
-    width: 820px;
-}
-
-#partners {
-    
-    list-style-type: none;
-    width: 610px;
-    margin: 0 auto;
-    background-color: green;
-}
-
-#partnertext {
-    font-size: 30px;
+#partners  {
+    height: 150px;
     text-align: center;
-    background-color: white;
-    color: red;
-    width: auto;
-    margin: auto;
 }
 
-.logo {
+#partners li {
+    list-style-type: none;
     float: left;
 }
 
 #partners img {
-    height: 100px;
-}
-
-#contactinfo {
-    position: relative;
-    width: 300px;
-    border-radius: 5%;
-    color: white;
-    display: inline-block;
-    background-color: darkblue;
-    padding-top: 0px;
-    padding-bottom: 3px;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-
-.center {
-    text-align: center;
-    font-size: 30px;
-}
-#caption {
-    position: relative;
-    /* display: inline-block; */
-    border-radius: 5%;
-    color: white;
-    background-color: darkblue;
-    padding-top: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    width: 300px;
-    font-size: 30px;
-    float: left;
-}
-
-footer {
-    padding: 2em;
-    color: #fff;
-    background: royalblue;
-    text-align: center;
-}
-
-.slide {
-    display: none;
-}
-
-@media screen and (max-width: 840px) {
-    #caption, #contactinfo {
-        padding-right: 0px;
-        padding-left: 5px;
-    }
-    #bottom {
-        width: 630px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    #caption, #contactinfo {
-        float: none;
-    }
-    #bottom {
-        width: 310px;
-    }
-}
-
-@media screen and (max-width: 1230px) {
-    .topnav a:not(:first-child) { display: none; }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1230px) {
-    .topnav.responsive { position: fixed; }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
+    height: 44px;
 }
