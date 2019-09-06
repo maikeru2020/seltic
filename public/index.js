@@ -2,19 +2,31 @@ function toggleMenu() {
     $("#menu").toggle();
 }
 
-// function toggleResponsive() {
-//     var topNav = $("#topnavId");
-//     if (topNav.attr("class") == "topnav") {
-//         topNav.addClass("responsive");
-//     } else {
-//         topNav.removeClass("responsive");
-//     }
-// }
+var slideIndex = 1;
 
-function toggleSidebar() {
-    $(".sidebar").toggle();
+function slideShow() {
+    ++slideIndex;
+    if (slideIndex == 5) {
+        slideIndex = 1;
+    }
+
+    setTimeout(function() { 
+        $("#slide").fadeOut(8000, function() {
+        $("#slide").attr("src", "images/image" + slideIndex + ".jpg");
+        if (slideIndex == 2) {
+            $("#slide").css("height", "100%");
+            $("#slide").css("width", "auto");
+        } else {
+            $("#slide").css("height", "auto");
+            $("#slide").css("width", "100%");
+        }
+        
+        $("#slide").fadeIn(8000, slideShow);
+
+        });
+    }, 40000);
 }
 
-$(document).ready(function() {
-   
-});
+function toggleMap() {
+    $("#map").toggle();
+}
