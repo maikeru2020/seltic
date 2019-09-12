@@ -89,3 +89,7 @@ marquee {
 footer {
     text-align: center;
 }
+
+#construction img {
+    width: 100%;
+}

@@ -73,3 +73,10 @@ nav img {
 .content {
     max-width: 500px;
 }
+
+marquee {
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    z-index: 3;
+}
