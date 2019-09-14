@@ -43,7 +43,7 @@ marquee {
 .socialmedia {
     width: 100%;
     border: 1px solid black;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .socialmedia li {
@@ -54,7 +54,7 @@ marquee {
 }
 
 #phonetext {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fa-facebook {
